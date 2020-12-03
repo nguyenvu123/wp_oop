@@ -1,0 +1,89 @@
+.clearfix {
+    @include clearfix;
+}
+
+body {
+    font-family: $font-1; //Default font family
+    color: $textcolor-1; //Default text color
+    letter-spacing: normal; //Default letter spacing
+    font-size: 15px; //Default font size
+    line-height: 24px; //Default line height
+    font-weight: 400; //Default font-weight
+    background: #fff; //Default background
+}
+
+.wrapper {
+    max-width: 1068px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    &.full-width {
+        max-width: 1280px;
+    }
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    font-weight: bold;
+    color: $blue;
+    letter-spacing: 0.02em;
+}
+
+h1, .h1 {
+    font-size: 55px;
+    line-height: 67px;
+}
+
+h2, .h2 {
+    font-size: 30px;
+    line-height: 45px;
+
+    &.title-medium {
+        font-size: 28px;
+        line-height: 42px;
+    }
+}
+
+
+.text-medium {
+    color: $black;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 27px;
+
+    &.semi-bold {
+        font-weight: 600;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &.bg-center {
+        background-position: center center;
+    }
+    &.bg-top-center {
+        background-position: top center;
+    }
+}
+
+.link-more {
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 25px;
+    color: $blue;
+}

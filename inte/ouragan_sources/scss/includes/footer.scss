@@ -1,0 +1,89 @@
+#footer {
+    padding: 50px 0;
+    background-color: $black;
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        .col-item {
+            width: calc(25% - 63.75px);
+            margin-right: 85px;
+            max-width: 234px;
+
+            .title {
+                font-size: 16px;
+                line-height: 25px;
+                font-weight: 500;
+                color: #fff;
+                padding-bottom: 30px;
+                border-bottom: 1px solid $textcolor-1;
+                margin-bottom: 30px;
+
+                &.subscribe {
+                    border-bottom: 0;
+                    margin-bottom: 0;
+                }
+            }
+
+            &:last-child {
+                margin-right: 5px;
+                margin-left: auto;
+            }
+
+            li {
+                font-size: 14px;
+                line-height: 21px;
+                margin-bottom: 10px;
+                &.active {
+                    a {
+                        color: $orange;
+                    }
+                }
+                a{
+                    color: $text2;
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+
+                &.copyright {
+                    margin-top: 37px;
+                }
+            }
+        }
+    }
+
+    .form-address {
+        position: relative;
+        margin-bottom: 40px;
+
+        input {
+            width: 100%;
+            height: 50px;
+            border-radius: 6px;
+            background: #fff;
+            padding: 15px 50px 15px 17px;
+            font-size: 14px;
+            font-style: italic;
+            text-align: left;
+            color: $black;
+            @include placeholder {
+                color: $black;
+            }
+        }
+
+        button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 3px;
+            background-color: $orange;
+        }
+    }
+}

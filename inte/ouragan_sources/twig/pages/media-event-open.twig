@@ -1,0 +1,60 @@
+{% extends '../layouts/default.twig' %}
+
+{% block htmlclass %}{{ parent() }} page-media-event-open-html{% endblock %}
+{% block bodyclass %}{{ parent() }} page-media-event-open{% endblock %}
+
+{% block title %}Media Events Open - {{ parent() }}{% endblock %}
+
+{#{% if is_ouragan_used is defined %}#}
+    {#{% if is_ouragan_used %}#}
+        {#{{ ouragan_include_once_css({#}
+            {#src: 'public/assets/css/pages/home.css',#}
+            {#priority: 5,#}
+            {#cache: random,#}
+            {#media: 'not print',#}
+            {#target: 'beforebody',#}
+            {#inline: false#}
+        {#}) }}#}
+    {#{% endif %}#}
+{#{% endif %}#}
+
+{#{% if is_ouragan_used is defined %}#}
+    {#{% if is_ouragan_used %}#}
+        {#{{ ouragan_include_once_js({#}
+            {#src: 'public/assets/js/pages/home.js',#}
+            {#priority: 5,#}
+            {#cache: random,#}
+            {#target: 'afterbody',#}
+            {#inline: false#}
+        {#}) }}#}
+    {#{% endif %}#}
+{#{% endif %}#}
+
+{% block pre_content %}
+    <!--
+    Include this snippet only on the frontpage.
+    Testing tool: https://search.google.com/structured-data/testing-tool
+    Documentation: https://developers.google.com/search/docs/data-types/sitelinks-searchbox
+    -->
+    <script type='application/ld+json'>
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "http://my-website-url.com/#website",
+            "url": "http://my-website-url.com/",
+            "name": "Name of the website",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "http://my-website-url.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+
+    </script>
+{% endblock %}
+
+{% block content %}
+    {% include '../blocks/banner-media-even-open.twig' %}
+    {% include '../blocks/media-featured-post.twig' %}
+    {% include '../blocks/slide-partner.twig' %}
+{% endblock %}

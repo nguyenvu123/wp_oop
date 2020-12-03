@@ -1,0 +1,28 @@
+.breadcrumb {
+    display: flex;
+    li {
+        position: relative;
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 12px;
+        padding-right: 15px;
+        &::after {
+            content: '\e804';
+            position: absolute;
+            right: 0;
+            top: 0;
+            @extend %fontello;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        &.active, &.current-item {
+            font-weight: 700;
+        }
+    }
+}

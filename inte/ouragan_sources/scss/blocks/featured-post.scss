@@ -1,0 +1,38 @@
+.banner-media-event-open {
+    .pic {
+        margin-top: 55px;
+    }
+}
+
+.media-featured-post-wrap {
+    width: 100%;
+    max-width: 855px;
+    margin-top: 90.5px;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .day {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        color: #646c7a;
+    }
+
+    h2 {
+        color: $black;
+        font-weight: 600;
+        margin-top: 39px;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 18px;
+        padding-top: 7px;
+
+        li {
+            padding-bottom: 33px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.block-key-figures {
+    .box-content {
+        border-top: 1px solid $bg-gray;
+        padding: 100px 0;
+    }
+    .col-left {
+        width: 60%;
+    }
+    .col-right {
+        width: 40%;
+        .image-right {
+            margin-left: auto;
+            max-width: 397px;
+            border-radius: 6px;
+        }
+    }
+    .title {
+        margin-bottom: 50px;
+    }
+    .row-item {
+        .item {
+            width: calc(50% - 30px);
+            max-width: 261px;
+            margin-right: 60px;
+            margin-bottom: 25px;
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 38px;
+            text-align: left;
+            color: $black;
+
+        }
+        p{
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}

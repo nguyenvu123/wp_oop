@@ -1,0 +1,15 @@
+{
+  "name": "starter-project-example-name",
+  "version": "1.0.22",
+  "scripts": {
+    "ouragan": "node node_modules/@fidesioparis/ouragan/ouragan.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fidesioparis/ouragan": "^1.0.22",
+    "counterup2": "^1.0.4",
+    "select2": "^4.0.13",
+    "slick-carousel": "^1.8.1",
+    "waypoints": "^4.0.1"
+  }
+}

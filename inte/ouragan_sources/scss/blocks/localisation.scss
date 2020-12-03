@@ -1,0 +1,45 @@
+.block-localisation {
+    margin-top: -173px;
+    .box-location {
+        display: flex;
+        align-items: center;
+        min-height: 360px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .content-location {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 975px;
+        margin: 0 auto;
+        .btn {
+            min-width: 180px;
+        }
+    }
+
+    .left {
+        margin-right: 75px;
+    }
+
+    .right {
+        margin-left: 75px;
+    }
+
+    .center-text {
+        text-align: center;
+        max-width: 457px;
+        margin: 0 auto;
+        color: #fff;
+        .title {
+            font-size: 28px;
+            color: inherit;
+            margin-bottom: 20px;
+        }
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}

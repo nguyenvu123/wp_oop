@@ -1,0 +1,38 @@
+.content-text {
+    h2 {
+        font-weight: 600;
+        color: $black;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 27px;
+        color: $textcolor-1;
+        margin-bottom: 17px;
+    }
+    .text-medium, ul {
+        + h2 {
+            margin-top: 50px;
+        }
+    }
+    p {
+        margin-bottom: 25px;
+    }
+    ul {
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 10px;
+                width: 4px;
+                height: 4px;
+                background-color: $black2;
+            }
+        }
+    }
+}

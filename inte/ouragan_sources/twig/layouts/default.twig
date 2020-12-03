@@ -1,0 +1,41 @@
+{% extends '../layout.twig' %}
+
+{% block htmlclass %}layout-default-html{% endblock %}
+{% block bodyclass %}layout-default{% endblock %}
+
+{#{% if is_ouragan_used is defined %}#}
+    {#{% if is_ouragan_used %}#}
+        {#{{ ouragan_include_once_css({#}
+            {#src: 'public/assets/css/layouts/default.css',#}
+            {#priority: 4,#}
+            {#cache: random,#}
+            {#media: 'not print',#}
+            {#target: 'beforebody',#}
+            {#inline: false#}
+        {#}) }}#}
+    {#{% endif %}#}
+{#{% endif %}#}
+
+{#{% if is_ouragan_used is defined %}#}
+    {#{% if is_ouragan_used %}#}
+        {#{{ ouragan_include_once_js({#}
+            {#src: 'public/assets/js/layouts/default.js',#}
+            {#priority: 4,#}
+            {#cache: random,#}
+            {#target: 'afterbody',#}
+            {#inline: false#}
+        {#}) }}#}
+    {#{% endif %}#}
+{#{% endif %}#}
+
+{% block header %}
+    {% include '../includes/header.twig' %}
+{% endblock %}
+
+{% block content %}
+    {{ parent() }}
+{% endblock %}
+
+{% block footer %}
+    {% include '../includes/footer.twig' %}
+{% endblock %}

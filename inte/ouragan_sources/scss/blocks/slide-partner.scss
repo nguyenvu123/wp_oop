@@ -1,0 +1,25 @@
+.block-slide-partner {
+    padding-bottom: 43px;
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+    .item-logo {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            background-color: $border-gray;
+        }
+        img {
+            margin: 0 auto;
+            opacity: 0.65;
+        }
+    }
+}

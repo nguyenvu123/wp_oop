@@ -1,0 +1,41 @@
+.block-why-etc-group {
+    padding: 100px 0 240px;
+    background-color: $bg-gray;
+    .row-col {
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid $border-gray;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    .col-item {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(33.33% - 20px);
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .image-left {
+            max-width: 150px;
+            margin-right: 30px;
+            border-radius: 6px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .content {
+            width: calc(100% - 180px);
+            .icon {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

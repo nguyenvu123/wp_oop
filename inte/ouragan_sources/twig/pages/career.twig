@@ -1,0 +1,78 @@
+{% extends '../layouts/default.twig' %}
+
+{% block htmlclass %}{{ parent() }} page-carrer-html{% endblock %}
+{% block bodyclass %}{{ parent() }} page-carrer{% endblock %}
+
+{% block title %}Carrer - {{ parent() }}{% endblock %}
+
+{#{% if is_ouragan_used is defined %}#}
+    {#{% if is_ouragan_used %}#}
+        {#{{ ouragan_include_once_css({#}
+            {#src: 'public/assets/css/pages/home.css',#}
+            {#priority: 5,#}
+            {#cache: random,#}
+            {#media: 'not print',#}
+            {#target: 'beforebody',#}
+            {#inline: false#}
+        {#}) }}#}
+    {#{% endif %}#}
+{#{% endif %}#}
+
+{#{% if is_ouragan_used is defined %}#}
+    {#{% if is_ouragan_used %}#}
+        {#{{ ouragan_include_once_js({#}
+            {#src: 'public/assets/js/pages/home.js',#}
+            {#priority: 5,#}
+            {#cache: random,#}
+            {#target: 'afterbody',#}
+            {#inline: false#}
+        {#}) }}#}
+    {#{% endif %}#}
+{#{% endif %}#}
+
+{% block pre_content %}
+    <!--
+    Include this snippet only on the frontpage.
+    Testing tool: https://search.google.com/structured-data/testing-tool
+    Documentation: https://developers.google.com/search/docs/data-types/sitelinks-searchbox
+    -->
+    <script type='application/ld+json'>
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "http://my-website-url.com/#website",
+            "url": "http://my-website-url.com/",
+            "name": "Name of the website",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "http://my-website-url.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+
+    </script>
+{% endblock %}
+
+{% block content %}
+    {% include '../blocks/banner-carrer.twig' %}
+    <div class="block-content-two-column carrer-column">
+        <div class="wrapper">
+            <h2 class="title">Our Mission and Vision</h2>
+            <div class="row d-flex">
+                <div class="col">
+                    <p>At ETC Group, our mission is to offer state-of-the art telecommunications products, expert
+                        technical consultation and high-quality logistics services to our valued customers. We pride
+                        ourselves on the relationship with our partners and the people who connect our business.
+                    </p>
+                </div>
+                <div class="col">
+                    <p>Our vision is driven from a spirit of excellence and deternination that acts on the belief that a
+                        small company with big ideas can do great things, « we value both the people who do the work and
+                        the work people do ».
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include '../blocks/technico-collapse.twig' %}
+{% endblock %}

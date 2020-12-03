@@ -1,0 +1,52 @@
+//============================================================
+// Fontello
+//============================================================
+
+%fontello {
+  font-family: fontello;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  user-select: none;
+}
+
+//&:before {
+//  @extend %fontello;
+//  content: '\E801';
+//  font-size: 15px;
+//}
+
+//============================================================
+// Hide Input number controls
+//============================================================
+
+%hide-input-number-controls {
+  -moz-appearance: textfield;
+  @at-root #{&}::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+  @at-root #{&}::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
+//input[type="number"] {
+//  @extend %hide-input-number-controls;
+//}
+
+//============================================================
+// Typography
+//============================================================
+
+%text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//p {
+//  @extend %text-ellipsis;
+//}

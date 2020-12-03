@@ -1,0 +1,31 @@
+//============================================================
+// Square root
+//============================================================
+
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+
+  @return $x1;
+}
+
+//div {
+//  margin-top: 25 * sqrt(2) - 25px;
+//  // Outputs: margin-top: 10.35533905932738px;
+//}
+
+//============================================================
+// Returns true if ouragan is in --dev mode
+// (defined in the example config files)
+//============================================================
+
+//@if is_dev_mode() {
+//  * {
+//    background: red !important;
+//  }
+//}

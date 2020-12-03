@@ -1,0 +1,108 @@
+.block-technico-collapse {
+    padding-top: 45px;
+    padding-bottom: 100px;
+    .form-group {
+        margin-bottom: 60px;
+    }
+    .row-collapse {
+        border-top: 1px solid $bg-gray;
+
+        &:last-child {
+            border-bottom: 1px solid $bg-gray;
+        }
+
+        &.active {
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+
+            .item-collapse {
+                background-color: $bg-gray;
+
+                h3 {
+                    font-weight: 600;
+                    color: $blue;
+                }
+
+                .open-collapse {
+                    .link-more {
+                        display: none;
+                    }
+
+                    i::before {
+                        content: '\e806';
+                    }
+                }
+            }
+        }
+    }
+
+    .item-collapse {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 23px 30px 30px;
+        height: 90px;
+        border-radius: 6px;
+        overflow: hidden;
+
+        h3 {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: 0.02em;
+            color: $textcolor-1;
+
+            img {
+                max-width: 30px;
+                margin-right: 30px;
+            }
+        }
+
+        .open-collapse {
+            min-height: 23px;
+
+            i {
+                cursor: pointer;
+
+                &::before {
+                    color: $blue;
+                    font-weight: bold;
+                }
+            }
+
+            .link-more {
+                margin-right: 55px;
+            }
+        }
+    }
+
+    .des-collapse {
+        display: none;
+        padding: 60px 0 100px;
+        .col-left {
+            width: calc(30% - 15px);
+            margin-right: 30px;
+        }
+        .col-right {
+            width: calc(70% - 15px);
+        }
+        .item {
+            padding-left: 20px;
+            border-left: 2px solid $blue;
+            margin-bottom: 30px;
+
+            h4 {
+                color: $blue;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 2px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}

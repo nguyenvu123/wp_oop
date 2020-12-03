@@ -1,0 +1,124 @@
+.pagination {
+    align-items: center;
+    justify-content: center;
+    li {
+        margin: 0 15px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        color: $black;
+        &.active {
+            text-decoration: underline;
+            color: $blue;
+        }
+
+        &:first-child, &:last-child {
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 53px;
+                height: 53px;
+                background: transparent;
+                border-radius: 50%;
+                border: 1px solid $border-color;
+            }
+        }
+
+        &:first-child, &:last-child {
+            a {
+                color: transparent;
+            }
+        }
+
+        &:first-child {
+            margin-right: 45px;
+
+            a{
+                transform: rotate(-180deg);
+                position: relative;
+
+                &:before {
+                    content: '';
+                    width: 18px;
+                    height: 14px;
+                    background: url('../images/Arrow_2.svg') no-repeat;
+                    position: absolute;
+                }
+            }
+        }
+        &:last-child {
+            margin-left: 45px;
+
+
+            a {
+                &:before {
+                    content: '';
+                    width: 18px;
+                    height: 14px;
+                    background: url('../images/Arrow_2.svg') no-repeat;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
+
+.navigation {
+    &.ajax {
+        clear: both;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .wp-pagenavi {
+            display: flex;
+            align-items: center;
+
+            a {
+                border: unset;
+            }
+
+            span {
+                &.pages {
+                    display: none;
+                }
+
+                &.current {
+                    border: unset;
+                }
+            }
+
+            .previouspostslink,.nextpostslink {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 53px;
+                height: 53px;
+                background: transparent;
+                border-radius: 50%;
+                border: 1px solid #D1DAE0;
+                margin-left: 45px;
+                text-indent: unset;
+                color: transparent;
+
+                &:before {
+                    content: '';
+                    width: 18px;
+                    height: 14px;
+                    background: url('../images/Arrow_2.svg') no-repeat;
+                    position: absolute;
+                }
+            }
+
+            .previouspostslink {
+                transform: rotate(-180deg);
+                margin-right: 45px;
+            }
+        }
+    }
+}
+
+

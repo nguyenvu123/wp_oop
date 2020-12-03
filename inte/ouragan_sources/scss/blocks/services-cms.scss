@@ -1,0 +1,49 @@
+.block-services-cms {
+    padding: 105px 0 70px;
+    .col-left {
+        width: 433px;
+    }
+    .col-right {
+        width: calc(100% - 433px);
+        max-width: 504px;
+        margin-left: auto;
+    }
+    .list-group {
+        width: 100%;
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 20px;
+            font-size: 18px;
+            letter-spacing: 0.02em;
+            border-top: 1px solid $bg-gray;
+            min-height: 90px;
+            cursor: pointer;
+            &:last-child {
+                border-bottom: 1px solid $bg-gray;
+            }
+            img {
+                display: none;
+            }
+            &.active {
+                background-color: $bg-gray;
+                color: $blue;
+                font-weight: 700;
+                border-radius: 6px;
+                + li {
+                    border-top-color: transparent;
+                }
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+    .des-item {
+        display: none;
+        &.show {
+            display: block;
+        }
+    }
+}

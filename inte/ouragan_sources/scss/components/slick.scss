@@ -1,0 +1,21 @@
+.slick-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    height: 53px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid $border-color;
+    cursor: pointer;
+    &.slick-prev {
+        transform: rotate(-180deg);
+    }
+}
+
+.slick-track {
+    display: flex;
+    .slick-slide {
+        height: auto;
+    }
+}
